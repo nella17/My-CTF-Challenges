@@ -44,7 +44,7 @@ struct node {
 
 `func_1540(node* ptr, int x)` 看到 `x & 1` 和 `x >>= 1` 及連續兩段相同的code，可以推測出這個函數是快速冪。<br>
 看出是快速冪後，可以知道 `func_1420` 是乘法運算。<br>
-ps: 可能是因為經過 O2 優化，L23-24 和 L28 分開ㄌ。 [source](./src/matrix.c#L152-L154)
+ps: 可能是因為經過 O2 優化，L21-22 和 L26 分開ㄌ。 [source](./src/matrix.c#L152-L154)
 
 ![](./assets/sub_1540.png)
 
