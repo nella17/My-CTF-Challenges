@@ -1,0 +1,20 @@
+services:
+  app:
+    depends_on:
+      - bot
+    build:
+      context: ./app
+      args:
+        INDEX_JS: index_f108bc13eb1a8479444968d04993134e.js
+        FLAG4: SCIST{flag4_Par4meter_ty9e_8ug}
+    ports:
+      - 0.0.0.0:8888:80/tcp
+    env_file:
+      - .env
+
+  # edit from https://github.com/splitline/My-CTF-Challenges/tree/master/ais3-pre-exam/2021/Web/xss-me/deploy/bot
+  bot:
+    build: ./bot
+    env_file:
+      - .env
+      - .env.secret

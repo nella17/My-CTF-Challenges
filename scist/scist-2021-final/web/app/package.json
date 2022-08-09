@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.1",
+    "express-logging": "^1.1.1",
+    "logops": "^2.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.4.1"
+  }
+}

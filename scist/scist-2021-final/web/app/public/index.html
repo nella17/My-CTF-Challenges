@@ -1,0 +1,5 @@
+<script>
+fetch('/verify')
+    .then(res => res.json())
+    .then(({ done }) => location.href = done ? '/note.html' : 'login.html')
+</script>
