@@ -40,7 +40,7 @@
 
 雖然有 `replaceALL` 把 `on` 移除，但 `oonn` 就可以 bypass 限制，加上 part1 知道 password 存在 cookie 內，即可拿到 admin password。
 
-詳細請見 [exploit.sh](./web/exploit.sh:L22-L28)
+詳細請見 [exploit.sh](./web/exploit.sh#L22-L28)
 
 `SCIST{flag3_X5s_2_Leak_p4sswOrd}`
 
