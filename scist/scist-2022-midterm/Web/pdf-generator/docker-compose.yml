@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  web:
+    build: src
+    restart: unless-stopped
+    hostname: pdf-generator
+    ports:
+      - ${LIP:-0.0.0.0}:20232:80
+    env_file:
+      - web.env

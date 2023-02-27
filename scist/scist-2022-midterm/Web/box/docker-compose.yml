@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  web:
+    build: src
+    restart: unless-stopped
+    hostname: box
+    ports:
+      - ${LIP:-0.0.0.0}:20231:80
+    env_file:
+      - web.env
